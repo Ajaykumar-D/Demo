@@ -1,0 +1,87 @@
+.App {
+  text-align: center;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.header {
+  background-color: olivedrab /*#282c34;*/;
+  height: 48px;
+  padding: 5px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.center-content {
+  background-color: olivedrab;
+  border: 1px solid olivedrab;
+}
+
+ul.nav-tabs {
+  background-color: rgb(187, 228, 122);
+}
+
+.nav-link.active, .nav-link.active:hover {
+  background-color: rgb(97, 158, 97) !important;
+  color: #FFF !important;
+}
+
+a.nav-link {
+  cursor: pointer;
+}
+
+.main {
+  height: 92vh;
+  background-color: olive;
+  color: #FFF;
+  padding: 10px;
+  text-align: left;
+}
+
+input {
+  border-radius: 5px;
+  border: none;
+}
+
+.bg-orange {
+  background-color: orange;
+  padding: 5px;
+}
+
+.add-product-row {
+  margin-right: 12px;
+}
+
+.product-list {
+  padding: 5px;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
