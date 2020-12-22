@@ -3,13 +3,11 @@ import { SAGA_FETCH_USER } from './sagaTypes';
 import API from './Api';
 import { fetchUserSuccess } from '../Reducers/cart.actions';
 
-function* fetchUserAsync() {
-    const result = yield call(API.apiFetchUser);
-    yield put(fetchUserSuccess(result));
+export function* fetchUserAsync() {
+    const result = yield call(API.apiFetchUser, {args: 1});//function call
+    yield put(fetchUserSuccess(result));//dispatches an action, to set store object
 }
 
 export function* fetchUser() {
-    console.log('sagas-fetch user');
-
     yield takeLatest(SAGA_FETCH_USER, fetchUserAsync);
 }
